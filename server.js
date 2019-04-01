@@ -32,7 +32,7 @@ wss.on('connection', function (ws) {
 
 
 
-server.listen(8000,(err)=>{
+server.listen(process.env.PORT || 5000,(err)=>{
 	console.log("server started")
 })
 
